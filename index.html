@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="report">
+      <div class="jeremy">
+        <img src="./images/image-jeremy.png" alt="Jeremy-robson">
+        Report for
+        <h2>Jeremy Robson</h2>
+      </div>
+      <div class="time">
+        <p id="daily" onclick="changeDaily()">Daily</p>
+        <p id ="weekly" onclick="changeWeekly()">Weekly</p>
+        <p id="monthly" onclick="changeMonthly()">Monthly</p>
+      </div>
+    </div>
+
+    
+    <div class="state n1">
+      <div class="head">
+       <img src="./images/icon-work.svg" alt="">
+      </div>
+      <div class="states">
+        <div class="states-header">
+          <h3>Work</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5"><path class="Oval-1" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 id="hourWork">5hrs</h1>
+        <p id="previousWork">Yesterday - 7hrs</p>
+      </div>
+    </div>
+
+
+    <div class="state n2">
+      <div class="head">
+       <img src="./images/icon-play.svg" alt="">
+      </div>
+      <div class="states">
+        <div class="states-header">
+          <h3>Play</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5"><path class="Oval-1" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 id="hourPlay">1hr</h1>
+        <p id="previousPlay">Yesterday - 2hrs</p>
+      </div>
+    </div>
+
+
+    <div class="state n3">
+      <div class="head">
+       <img src="./images/icon-study.svg" alt="">
+      </div>
+      <div class="states">
+        <div class="states-header">
+          <h3>Study</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5"><path class="Oval-1" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 id="hourStudy">0hrs</h1>
+        <p id="previousStudy">Yesterday - 1hr</p>
+      </div>
+    </div>
+
+
+    <div class="state n4">
+      <div class="head">
+       <img src="./images/icon-exercise.svg" alt="">
+      </div>
+      <div class="states">
+        <div class="states-header">
+          <h3>Exercise</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5"><path class="Oval-1" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 id="hourExercise">1hr</h1>
+        <p id="previousExercise">Yesterday - 1hr</p>
+      </div>
+    </div>
+
+
+    <div class="state n5">
+      <div class="head">
+       <img src="./images/icon-social.svg" alt="">
+      </div>
+      <div class="states">
+        <div class="states-header">
+          <h3>Social</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5"><path class="Oval-1" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 id="hourSocial">1hr</h1>
+        <p id="previousSocial">Yesterday - 3hrs</p>
+      </div>
+    </div>
+
+
+    <div class="state n6">
+      <div class="head">
+       <img src="./images/icon-self-care.svg" alt="">
+      </div>
+      <div class="states">
+        <div class="states-header">
+          <h3>Self Care</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5"><path class="Oval-1" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 id="hourSelfCare">0hrs</h1>
+        <p id="previousSelfCare">Yesterday - 1hr</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/einand0">Fernando Lopes Ferreira</a>.
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

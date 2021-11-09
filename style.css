@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+}
+.container{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 30vh 30vh;
+    grid-gap: 20px;
+    grid-template-areas: "report n1 n2 n3"
+                         "report n4 n5 n6";
+}
+.report{
+    grid-area: report;
+    background-color: white;
+    width: 200px;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+    color:white;
+}
+.jeremy{
+    background-color:  hsl(246, 80%, 60%);
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    color:hsl(236, 100%, 87%);
+}
+.jeremy h2{
+    font-weight: 300;
+    font-size: 30px;
+    color:white;
+}
+.jeremy img{
+    width: 60%;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.time{
+    height: 30%;
+    border-radius: 15px;
+    padding: 20px;    
+}
+.time p{
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.time p:hover{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.states{
+    background-color: hsl(235, 46%, 20%);
+    width: 200px;
+    height: 160px;
+    border-radius: 15px;
+    color:white;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.states:hover{
+    background-color:hsl(235, 39%, 27%) ;
+    cursor: pointer;
+}
+
+.Oval-1:hover{
+    fill:white;
+}
+
+.states h3{
+    font-size: 13px;
+    font-weight: 400;
+}
+.states h1{
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 3px;
+    margin-top:14px;
+}
+.states p{
+    color:hsl(236, 100%, 87%);
+    font-weight: 100;
+    font-size: 12px;
+}
+.states-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.n1{
+    grid-area: n1;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 15px;
+}
+.n2{
+    grid-area:n2;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 15px;
+}
+.n3{
+    grid-area:n3;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 15px;
+}
+.n4{
+    grid-area: n4;
+    background-color: hsl(145, 58%, 55%);
+    border-radius:15px;
+}
+.n5{
+    grid-area:n5;
+    background-color:  hsl(264, 64%, 52%);
+    border-radius: 15px;
+}
+.n6{
+    grid-area:n6;
+    background-color: hsl(43, 84%, 65%);
+    border-radius:15px;
+}
+
+.attribution{
+    left:0;
+    right: 0;
+    bottom:0;
+    position: absolute;
+}
