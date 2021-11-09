@@ -2,6 +2,21 @@
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+
+## Screenshot
+
+Daily
+
+<img src="screenshots/finish-project-daily.jpg" height="400" alt="Screenshot"/>
+
+Weekly
+
+<img src="screenshots/finish-project-weekly.jpg" height="400" alt="Screenshot"/>
+
+Monthly
+
+<img src="screenshots/finish-project-monthly.jpg" height="400" alt="Screenshot"/>
+
 ### The challenge
 
 Users should be able to:
@@ -10,20 +25,4 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
 
-![](./time-tracking-dashboard-main/finish-project-daily.jpg)
-![](./time-tracking-dashboard-main/finish-project-weekly.jpg)
-![](./time-tracking-dashboard-main/finish-project-monthly.jpg)
-
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-
-### What I learned
-
-Consegui aprender mais e aprimorar os meus conhecimentos em grid do CSS e em JavaScript.
